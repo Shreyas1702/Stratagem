@@ -5,80 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/home.css" />
   </head>
   <body>
     <nav class="navbar">
-
+      <h1>HealthCare</h1>
       <div class="pages">
-        <!-- <span class="page"><a href="/" class="active">Home</a></span> -->
+        <span class="page"><a href="/" class="active">Home</a></span>
         <span class="page"><a href="/login">Login</a></span>
         <span class="page"><a href="/register">Register</a></span>
       </div>
     </nav>
+    <hr class="horizontal" />
 
-    <!-- <div class="hero min-h-screen" style="background-image: url(/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
-      <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold text-white ">CouponZo</h1>
-          <p class="mb-5 text-black  font-bold">CouponZo headless promotion engine for generating
-            coupon codes.This is an coupon generator platform that allows
-            businesses of all sizes to create and distribute coupons easily and efficiently.</p>
-          <button class="btn btn-primary">Get Started</button>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
-    </div> -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    <!-- <div class="content">
-      <div>
-        <h1>CouponZo</h1>
-        <p class="desc">
-          CouponZo headless promotion engine for generating coupon codes.This is
-          an coupon generator platform that allows businesses of all sizes to
-          create and distribute coupons easily and efficiently.
-        </p>
-        <button class="button1">Get Started</button>
-      </div>
-      <div class="right">
-        <img src="/images/pic1.png" class="pic1" width="350px" alt="sales" />
-        <img src="/images/pic2.png" class="pic2" width="350px" alt="sales" />
-        <img src="/images/pic3.png" class="pic3" width="350px" alt="sales" />
+    <div class="team">
+      <h1>Our Team</h1>
+      <div class="team_structure">
+        <div class="person1">
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAtwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQMEBQYHAgj/xAA6EAABBAECBAQDBgQFBQAAAAABAAIDBBEFEgYTITEiQVFhB3GBFBUyQpGhI3LB0RYzorGyUmJzgoP/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQMCBAX/xAAdEQEAAgMAAwEAAAAAAAAAAAAAAQIDERIhMUET/9oADAMBAAIRAxEAPwDrSIi6QREQSiIgIiICIiAixHEXENDh6pz78h3O/wAuJgy6Q+391otX4vNkkl5+hSsha7ax7bAJJ9CCBjp81Nwal1BSsPw3xHp3ElM2dNl3bDtkjcMPjPoR/XssuqJREQEREAohRBKIEQCiIg8oiICIiCUREBEREFQu2Y6dSazMQI4mF7j7BV1pXxfvPpcD2xE7a+eSOEfInJ/YFJX21fhqlJxzrFvXdYJdV5hjr189No7Zx5D0W1X+EdKZA5rKMIGOuGrEcJV7mkcG6e6pFac/Y50grtjLtxJOTvWcvW9S+5ongv8AtM525fG3cPPq3oMrwXnqX0MccxDmEEk/AvF0V2tk03ZEjM94sjc0/LOR8l3uN7JI2yRu3McA5p9QVwPjmG87TTYtR2W8uYND52MaXA9Om3yXV/hrcdd4K01z3Fz4YzCSfPYS0fsAvVhmZr5eXNXVvDZ0wikdlqxRhMKUQRhSERACIiAiIg8ooUoCBEQSiIiHZTlQiCFy34132yN0vSIyHTPlEpZn18LM/Mk/oupHscr59+Jc7peM9RLySWbdntgAD+6lp8Oq+3TdK1+O/wAPwXtJrltewcAO8RiwcHIHftlVOINQlZSgmhJfGw8z7Q6GRu0Y7424XNvhLr1qDV36W3a6rI10ojJ7PGO3pkeXst/4lu6OyJz7NieIDq6DJAJ+XmV4bRzMw+ljtFo3LUPiTqjr/D0b5AQJSwscRjf4h2C2r4L2N/DViA94rJ6ezmg/1XIuJNcn13Vom7SyrC8CNh8/croHwbvOj1rUKOTsljEnyLT/AGP7L0Yo5h5c9u5268FKgKVu8wiIgIiICIiAiIg8IoUhBKKApQSihSgIihB4leI2FzjgDrnK+eviZdr3OIp3U8Oy1rHSA/ix6fsPouj8Sa9HPqFys3V4o2wsLRWDebhwz4gY93i6E7HbTjqDgEDh12w51l7nuz16OXNnVWwfC7wcZ1BjIax5xnv0XbNc0uG3XdIYd5aDge65l8Pqz6dSSxG+Pm2TnaNRmgk2+WWMhcT9HdVtL4WSHD49UD3difvmUH/isrYep21rm58act4lpv0riF0RAz+IAehC2/4Q36FbWLc96w2GUxgMa5p6jrk/7LWuNYQeJ3QFrm7Y2tPhlBDseYlJf+pVvSls1rVU17EkVgYA5T3t3de3h7/VWI1OknzG30xDLHPGJIXtkYezmnIXtcy0q3fo3ItSuwTREECdxqSnc3oCXOErsDzyYwB7d101bMUoiICIiAiBEBERBTREQSgRSgBSoClAXiV2yN78E7Wk/Ne1a6ocaba6Z/hOGNrSO3o7A/Xp6oOTcTcQuGjTRMvwWY3YDoI9YglcQfWGOMBvU/kcce650dPkv6nHTrQSOkdjcIYnSFo8ztb1IHoFv3HWqmxw3M06zG/L4uXXZebY52X7i4uMTcHt0YcexCxPBtbSGVjdvahprrcw8MX2i2JYR6EQY6n5lSY8uonUNw0+D7DpsEMX29kcTdrcVNWfGP8A55aAPlkKpBSbZa/7JVMh/MG6dqDmH/1mkZGP3VqyfT5Zm8qSo+cjIay7qlaVwHchpyXfoVVniqWcNfCZh3Db2g6jqBB9nTOGPoAunLnPFcUcGv2GV4uS6N7GuiELItriOo2sJaPoVS0KjJquuwQRtkeD4i1lV1jp6FjSMj5kD1VLWIvu3ULLJI3tkfI5xaYOTt69MMP4f5fJbD8PdPlsDUbjtNtWIPC0cufltIB8Q27m8z5OIb065OAco9tfjY7mlQ0nxzmnFAWODA86O2qY3n8I5sUhMRJ6DeCDnB6Lrcf+Wz+ULkkVWvFbqwxRtjmO2Nu+g2lPy+gIJZ/CnZ5OAAIByOwXXSMFaM5ApREQREQMplMJhAREQeERSgIi9AIIwpCKUHnCxXFB2aJYJeWNGCS2MPdgdejT0J6eYI9isusdxAxj9Km5oeY2lrnhmclocCQPf098K/Rotu1O6s+P72EE0gPOjZrUk8gyMAOD2coHy2kNGTjKx3BjNe+5Y6tX/ELq8BcyDbbhqxFmTjALS8dPmslDarQaa1r4xC1z7FjUZYnYAggGHQxkY2x8wtiAGNwa53mVdwa9qWn1PsrIoHz1oIInQsbtDrdhwMcIPk1jO56kjr0UvFvjqs1+qc1HiR7uVsusgPV4l4jkHMPplsOW/QhWL6t4T8qWrYjeO0cnGE3i9hhnVbxU1etYbgyBrubJExzuglLHbXFvtleNTmMMYfG0AtErw4H/AKYZHD9wFjGS29S1nHXncOYN4QqcRa/FI+OKGBjS6yI9Yfbkk8hkuaC0Z6Zz5Lf3Q1dOpNr1YWsrV2BoijacNHqQAcD3P6rAUyyEadGRmOI6E3BGcA7gP9RBVlZjq/ckYwIZYJZZpZGfjEfPfHJI0990b+XJn3I811fD1PmUx5uI9MpRkNjXKtGMFrRYbJK0OG1xxuY4YGHNLQ4hwP5CPNdEwtG4AoTOtTW7Q8VcOi6DwtmLiJQ323MLx6c0reV3WsVjUOL3m9upERFXAiIgIiIChSiDymFOEQFKIgKURAVKzEZq8kbSGuc3wuxna7yP0OD9FVUoObXNEt1GTRXKksWmMfQrumDg8CpF439AdxLpTgjGSDn1VtUne+aG64AWWmxqj439CbU7+TXYR6tb/RdRPyytF1T4fhlx1vRadDmgbomuLq74XEkkte3IcCTnDmnB+mLEo1qTWKFHWpNFZDdvR6dXZTY2vE+QyPbkyPOBnq9x/RXkOq6iOY1mia0Kxika1klR7jl0bmg5x/3eavIOFtV0VrbFbSr32173vkm0+WnMcntudLG0nv2wqdnTeKbckbHxatNuaOY61p+nOa0/Le3P6rP869dNf1nnlhZb2osYS/SbcW0aYGumZywTXfl34sKbNiVpjNmhcbB9rvh+2B0gNawCfyA58WOntlX/APg7VZI90lDSGv3Fro7mlVySM9COU/pn06/NXMfBdWCMSyVIas4OS7T5Ja7XexDXruZcabdwPPBZ4ZpSwHc4sxM/luYXSDo4kOGR2WeXiu1jII2xN2sDRtGc4/VVEQREQQilEEIpRBCKUQeAigKUEoiIJRAiCURER7iAc7r2VceH3VCLuVWPZRYU5dr2Ob1a4g+IeXurOhVjrU4YJHSWHxsDXTSnq847n3PdX35T8laR95v/ACn/AGUVL4y5jmxBgJHTp5qztRt/iZ6uZ0PTssgz8BVhqZPi693DKKq6fJvg29cxnb1/ZXKtKH47H86u11CCIiIIhUIJRQiBlFBRB//Z"
+            alt=""
+          />
+          <h2>Dr. Amey Managute</h2>
+          <h4>Pediatrician</h4>
+        </div>
+
+        <div class="person1">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <h2>Dr. Amey Managute</h2>
+          <h4>Pediatrician</h4>
+        </div>
+
+        <div class="person1">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <h2>Dr. Amey Managute</h2>
+          <h4>Pediatrician</h4>
+        </div>
+
+        <div class="person1">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <h2>Dr. Amey Managute</h2>
+          <h4>Pediatrician</h4>
+        </div>
       </div>
     </div>
 
-    <div class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <img src="/images/logo.png" width="200px  " alt="logo" />
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a class="footer__link twitter-link" target="_blank" href="#">
-          CouponZo</a
-        >.
-      </p>
-      <p class="footer_p">Made by : <span> Shreyas Omkar Sahil Nouman</span></p>
-    </div>
-  </body> -->
+    <div class="services"></div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
 </html>
