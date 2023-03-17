@@ -39,6 +39,7 @@
 #carouselExampleCaptions {
   width: 100%;
   height: 650px;
+  overflow: hidden;
 }
 
 .carousel-inner .carousel-item img {
@@ -48,6 +49,31 @@
 
 .carousel-caption {
   bottom: 40%;
+  /* animation: slide-up 9s;
+  overflow: hidden; */
+  color: black;
+}
+
+.carousel-caption h5 {
+  bottom: 40%;
+  animation: slide-up 9s;
+  transform: translateY(100%);
+  overflow: hidden;
+  color: black;
+}
+.carousel-caption p {
+  bottom: 40%;
+  animation: slide-up 9s;
+  transform: translateY(100%);
+  overflow: hidden;
+  color: black;
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .carousel-caption h5 {
